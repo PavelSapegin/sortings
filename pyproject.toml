@@ -1,0 +1,22 @@
+[build-system]
+
+requires = ["setuptools>=61","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sortings"
+version = "0.0.1"
+description = "Pack of sorting algorithms (bubble, quick, merge and heap sort)"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+include-package-data = true
+
+
